@@ -1,10 +1,6 @@
 import Image from "next/image";
-import Nus from "../../public/nus.png";
 import About from "./about";
 import Hero from "../../public/hero.jpg"
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   return (
