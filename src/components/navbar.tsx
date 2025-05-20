@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Nus from "../../public/nus.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import {
 	Sheet,
@@ -17,6 +17,39 @@ const sections = ["home", "about", "speakers", "registration", "venue"];
 
 export function Navbar() {
 	const [activeSection, setActiveSection] = useState("home");
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const visibleSections = entries
+					.filter((entry) => entry.isIntersecting)
+					.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+				if (visibleSections.length > 0) {
+					const id = visibleSections[0].target.getAttribute("id");
+					if (id) {
+						setActiveSection(id);
+					}
+				}
+			},
+			{
+				root: null,
+				rootMargin: "-40% 0px -40% 0px",
+				threshold: 0.1,
+			}
+		);
+
+		const elements = sections
+			.map((id) => document.getElementById(id))
+			.filter((el): el is HTMLElement => el !== null);
+
+		elements.forEach((el) => observer.observe(el));
+
+		return () => {
+			elements.forEach((el) => observer.unobserve(el));
+		};
+	}, []);
+
 
 	const handleScrollToSection = (section: string) => {
 		const element = document.getElementById(section);
@@ -59,7 +92,7 @@ export function Navbar() {
 						variant="outline"
 						className="px-10 cursor-pointer relative overflow-hidden group"
 					>
-						REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2"/></span>
+						REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 					</Button>
 				</div>
 
@@ -94,7 +127,7 @@ export function Navbar() {
 									className="w-full mt-4 relative overflow-hidden group"
 									onClick={() => handleScrollToSection("registration")}
 								>
-									REGISTRATION <span><ArrowRight className="transition-transform group-hover:translate-x-2"/></span>
+									REGISTRATION <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 								</Button>
 							</div>
 						</SheetContent>
