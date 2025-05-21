@@ -1,7 +1,7 @@
 import { MapPin } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-export function SpeakerCard({ name, position, university, image, link, panelNum, panel, panelDesc, layout }: { name: string, position: string, university: string, image: any, link?: string, panelNum: string, panel?: string, panelDesc?: string, layout?: string }) {
+export function SpeakerCard({ name, position, university, image, link, panelNum, panel, panelDesc, layout }: { name: string, position: string, university: string, image: StaticImageData, link?: string, panelNum: string, panel?: string, panelDesc?: string, layout?: string }) {
 	const right = () => {
 		return (
 			<>

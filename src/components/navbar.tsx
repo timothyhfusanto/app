@@ -59,7 +59,7 @@ export function Navbar() {
 	};
 
 	return (
-		<div className="fixed top-0 left-0 z-50 w-full bg-gray-100 shadow-sm">
+		<div className={`fixed top-0 left-0 z-50 w-full ${activeSection !== "home" && "bg-gray-100 shadow-sm"}`}>
 			<div className="container mx-auto p-4 flex items-center justify-between">
 				{/* Left: Logo */}
 				<div className="flex items-center">
