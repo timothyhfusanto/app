@@ -25,7 +25,6 @@ export default function About() {
 					</p>
 					<Button
 						size="lg"
-						variant="outline"
 						className="max-w-3xs cursor-pointer uppercase relative overflow-hidden group"
 						onClick={() => window.open("https://cssh.nus.edu.sg/", "_blank")}
 					>
