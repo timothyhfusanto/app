@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Calendar, Mail, MapPin, Phone } from "lucide-react";
 import VenueMap from "../components/mapvenue";
 import { motion } from "framer-motion";
 
@@ -58,20 +58,21 @@ export default function Venue() {
 					<div className="flex flex-col justify-center text-primary text-md gap-4 mb-8">
 						<div>
 							<div className='flex items-center'>
+								<p className="flex items-center"><Calendar className='mr-2' size={20} />Conference Date</p>
+							</div>
+							<p className="text-primary leading-loose">
+								2nd July 2025
+							</p>
+						</div>
+						<div>
+							<div className='flex items-center'>
 								<p className="flex items-center"><Mail className='mr-2' size={20} />Email</p>
 							</div>
 							<a href="mailto:example@nus.edu.sg" className="text-primary leading-loose hover:underline">
 								example@nus.edu.sg
 							</a>
 						</div>
-						<div>
-							<div className='flex items-center'>
-								<p className="flex items-center"><Phone className='mr-2' size={20} />Contact Person</p>
-							</div>
-							<p className="text-primary leading-loose">
-								+65 1234 5678
-							</p>
-						</div>
+
 					</div>
 				</motion.div>
 			</div>

@@ -21,7 +21,7 @@ export default function Registration() {
 					Join Us!
 				</h1>
 				<p className="text-md text-primary leading-loose">
-					To register for the CSSH Workshop, please fill out the form below.
+					To register for the CSSH Workshop, click on the button below.
 					We look forward to seeing you there!
 				</p>
 				<a
