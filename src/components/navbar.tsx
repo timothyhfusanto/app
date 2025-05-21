@@ -122,9 +122,9 @@ export function Navbar() {
 								))}
 								<Button
 									className="w-full mt-4 relative overflow-hidden group"
-									onClick={() => handleScrollToSection("registration")}
+
 								>
-									REGISTRATION <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
+									REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 								</Button>
 							</div>
 						</SheetContent>

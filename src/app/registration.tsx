@@ -19,7 +19,6 @@ export default function Registration() {
 					We look forward to seeing you there!
 				</p>
 				<a
-					href="https://example.com/registration-form"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
