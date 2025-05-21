@@ -24,8 +24,8 @@ export default function Speakers() {
 						/>
 						<SpeakerCard
 							name="Aaron Maniam"
-							position="Chair of Business Administration"
-							university="University of Georgia"
+							position="Director of Digital Transformation Education"
+							university="University of Oxford, Blavatnik School of Government"
 							image={aaron}
 							panelNum="II"
 							link="https://en.wikipedia.org/wiki/Aaron_Maniam"
