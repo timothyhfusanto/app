@@ -2,6 +2,7 @@ import Image from "next/image";
 import About from "./about";
 import Hero from "../../public/images//nus/hero.jpg"
 import Speakers from "./speakers";
+import Registration from "./registration";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       </section>
       <About />
       <Speakers />
+      <Registration/>
     </>
   );
 }

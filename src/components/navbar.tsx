@@ -34,7 +34,7 @@ export function Navbar() {
 			},
 			{
 				root: null,
-				rootMargin: "-30% 0px -30% 0px",
+				rootMargin: "-10% 0px -10% 0px",
 				threshold: 0.1,
 			}
 		);
