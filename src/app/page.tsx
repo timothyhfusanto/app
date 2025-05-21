@@ -3,6 +3,7 @@ import About from "./about";
 import Hero from "../../public/images//nus/hero.jpg"
 import Speakers from "./speakers";
 import Registration from "./registration";
+import Venue from "./venue";
 
 export default function Home() {
   return (
@@ -31,7 +32,8 @@ export default function Home() {
       </section>
       <About />
       <Speakers />
-      <Registration/>
+      <Registration />
+      <Venue />
     </>
   );
 }
