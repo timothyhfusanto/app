@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import nus4 from "../../public/images/nus/nus4.jpg";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Registration() {
 	return (
@@ -9,8 +10,13 @@ export default function Registration() {
 			id="registration"
 			className="min-h-screen w-full grid grid-cols-1 md:grid-cols-12"
 		>
-			{/* Left: Text content */}
-			<div className="container mx-auto max-w-2xl px-10 py-20 flex flex-col md:col-span-7 justify-center h-full gap-8">
+			<motion.div
+				className="container mx-auto max-w-2xl px-10 py-20 flex flex-col md:col-span-7 justify-center h-full gap-8"
+				initial={{ opacity: 0, x: -50 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ delay: 0.4, duration: 0.8 }}
+				viewport={{ once: true }}
+			>
 				<h1 className="text-5xl lg:text-7xl font-bold text-primary uppercase">
 					Join Us!
 				</h1>
@@ -28,10 +34,15 @@ export default function Registration() {
 						REGISTER NOW <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 					</Button>
 				</a>
-			</div>
+			</motion.div>
 
-			{/* Right: Fullscreen Image */}
-			<div className="relative md:min-h-screen w-full md:col-span-5">
+			<motion.div
+				className="relative md:min-h-screen w-full md:col-span-5"
+				initial={{ opacity: 0, x: 50 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ delay: 0.4, duration: 0.8 }}
+				viewport={{ once: true }}
+			>
 				<Image
 					src={nus4}
 					alt="Registration"
@@ -39,7 +50,7 @@ export default function Registration() {
 					className="object-cover"
 					priority
 				/>
-			</div>
+			</motion.div>
 		</section>
 	);
 }
