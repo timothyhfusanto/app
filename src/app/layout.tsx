@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter} from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "../styles/globals.css";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -21,7 +21,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "CSSH Workshop",
-  description: "Join us for an exciting workshop on the impact of information systems research.",
+  description: "Join us for an exciting workshop on the impact of information systems research, hosted by the National University of Singapore.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  keywords: ["CSSH Workshop", "NUS", "Information Systems", "Academic Conference", "Digital Transformation"],
+  authors: [
+    { name: "CSSH Organizing Committee", url: "https://csshworkshop.vercel.app" },
+  ],
+  creator: "CSSH Workshop Team",
+  metadataBase: new URL("https://csshworkshop.vercel.app"),
+  openGraph: {
+    title: "CSSH Workshop",
+    description: "Join us for an exciting workshop on the impact of information systems research, hosted by the National University of Singapore.",
+    url: "https://csshworkshop.vercel.app",
+    siteName: "CSSH Workshop",
+    locale: "en_SG",
+    type: "website",
+  }
 };
 
 export default function RootLayout({
@@ -36,7 +53,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
