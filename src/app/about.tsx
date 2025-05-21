@@ -1,19 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import hero from "../../public/hero.jpg";
+import nus2 from "../../public/images/nus/nus3.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default function About() {
 	return (
 		<section id="about" className="min-h-screen w-full flex items-center justify-center">
-			<div className="py-20 grid grid-cols-1 md:grid-cols-2 gap-4">
+			<div className="container mx-auto px-10 py-20 grid grid-cols-1 md:grid-cols-2 gap-4">
 				<Image
-					src={hero}
+					src={nus2}
 					alt="CSSH NUS Logo"
 					priority
-					className="w-full cursor-pointer"
+					className="w-full cursor-pointer h-full object-cover"
 				/>
 				<div className="flex flex-col justify-center h-full p-8 gap-8">
 					<h1 className="text-5xl lg:text-7xl font-bold text-primary uppercase">About Us</h1>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import About from "./about";
-import Hero from "../../public/hero.jpg"
+import Hero from "../../public/images//nus/hero.jpg"
+import Speakers from "./speakers";
 
 export default function Home() {
   return (
@@ -27,24 +28,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <div className="container mx-auto">
-        <About />
-
-      </div>
+      <About />
+      <Speakers />
     </>
   );
 }
-
-{/* <div className="bg-[#ff8400] w-full md:col-span-7 md:rounded-br-2xl p-4 md:rounded-tr-2xl">
-          <div className="flex flex-col justify-center h-full p-8 gap-10">
-            <h1 className="text-5xl lg:text-7xl font-bold text-white uppercase">Workshop registration</h1>
-            <p className="text-lg text-white">
-              The Impact of Information Systems Research: Past, Present, and Future conference will be held Saturday, May 24, 2025 on campus at the University of Texas at Austin.
-            </p>
-            <div>
-              <Button size="lg" className="font-bold py-8 w-2xs text-2xl rounded-full cursor-pointer">
-                Register Now <ArrowRight />
-              </Button>
-            </div>
-          </div>
-        </div> */}

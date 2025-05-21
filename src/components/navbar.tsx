@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Nus from "../../public/nus.png";
+import Nus from "../../public/images/nus/nus.png";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import {
@@ -34,7 +34,7 @@ export function Navbar() {
 			},
 			{
 				root: null,
-				rootMargin: "-40% 0px -40% 0px",
+				rootMargin: "-30% 0px -30% 0px",
 				threshold: 0.1,
 			}
 		);
@@ -55,12 +55,11 @@ export function Navbar() {
 		const element = document.getElementById(section);
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
-			setActiveSection(section);
 		}
 	};
 
 	return (
-		<div className="fixed top-0 left-0 z-50 w-full ">
+		<div className="fixed top-0 left-0 z-50 w-full bg-gray-100 shadow-sm">
 			<div className="container mx-auto p-4 flex items-center justify-between">
 				{/* Left: Logo */}
 				<div className="flex items-center">
@@ -79,7 +78,7 @@ export function Navbar() {
 						<button
 							key={section}
 							onClick={() => handleScrollToSection(section)}
-							className={`text-md uppercase cursor-pointer hover:text-secondary ${activeSection === section ? "text-secondary underline" : "text-primary"}`}
+							className={`text-md uppercase cursor-pointer font-semibold hover:text-secondary ${activeSection === section ? "text-secondary" : "text-primary"}`}
 						>
 							{section}
 						</button>
@@ -89,7 +88,6 @@ export function Navbar() {
 				{/* Right: Button */}
 				<div className="hidden lg:flex items-center">
 					<Button
-						variant="outline"
 						className="px-10 cursor-pointer relative overflow-hidden group"
 					>
 						REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
@@ -114,8 +112,8 @@ export function Navbar() {
 										onClick={() => {
 											handleScrollToSection(section);
 										}}
-										className={`block w-full text-left text-md uppercase ${activeSection === section
-											? "text-secondary underline"
+										className={`block w-full text-left font-semibold text-md uppercase ${activeSection === section
+											? "text-secondary"
 											: "text-primary"
 											}`}
 									>
@@ -123,7 +121,6 @@ export function Navbar() {
 									</button>
 								))}
 								<Button
-									variant="outline"
 									className="w-full mt-4 relative overflow-hidden group"
 									onClick={() => handleScrollToSection("registration")}
 								>
