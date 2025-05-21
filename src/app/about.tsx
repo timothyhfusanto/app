@@ -14,6 +14,7 @@ export default function About() {
 					alt="CSSH NUS Logo"
 					priority
 					className="w-full cursor-pointer h-full object-cover"
+					onClick={() => window.open("https://cssh.nus.edu.sg/", "_blank")}
 				/>
 				<div className="flex flex-col justify-center h-full p-8 gap-8">
 					<h1 className="text-5xl lg:text-7xl font-bold text-primary uppercase">About Us</h1>
