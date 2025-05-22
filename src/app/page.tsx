@@ -8,7 +8,7 @@ import Registration from "./registration";
 import Venue from "./venue";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Calendar, ChevronRight, Clock, MapPin } from "lucide-react";
+import { Calendar, ChevronRight, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
