@@ -51,7 +51,7 @@ export default function Home() {
             Impact of Information <br /><span className="text-secondary">Systems Research</span>
           </motion.h1>
           <motion.div
-            className="text-sm lg:text-xl font-semibold flex flex-col md:flex-row gap-4"
+            className="text-md lg:text-xl font-semibold flex flex-col md:flex-row gap-4"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
@@ -82,7 +82,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <Button
-              className="px-10 py-8 text-md md:text-xl cursor-pointer relative overflow-hidden group bg-secondary hover:bg-white hover:text-black"
+              className="px-10 py-8 text-md md:text-xl cursor-pointer relative overflow-hidden group bg-secondary hover:bg-amber-500"
             >
               REGISTER NOW <span><ChevronRight className="transition-transform group-hover:translate-x-2" /></span>
             </Button>
