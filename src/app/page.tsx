@@ -82,7 +82,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <Button
-              className="px-10 py-8 text-md md:text-xl cursor-pointer relative overflow-hidden group bg-secondary hover:bg-amber-500"
+              className="px-10 py-8 text-xl cursor-pointer relative overflow-hidden group bg-secondary hover:bg-amber-500"
             >
               REGISTER NOW <span><ChevronRight className="transition-transform group-hover:translate-x-2" /></span>
             </Button>
