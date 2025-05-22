@@ -29,7 +29,7 @@ export default function Registration() {
 					rel="noopener noreferrer"
 				>
 					<Button
-						className="px-10 cursor-pointer relative overflow-hidden group"
+						className="px-10 py-6 text-lg cursor-pointer relative overflow-hidden group"
 					>
 						REGISTER NOW <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 					</Button>
