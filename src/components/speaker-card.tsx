@@ -22,7 +22,7 @@ export function SpeakerCard({ name, position, university, image, link, panelNum,
 						<p className="text-4xl font-semibold">{name}</p>
 						<p className="text-md font-light">{position}</p>
 						<p className="flex flex-row-reverse items-center justify-end text-md font-light">
-							<MapPin size={17} className="ml-1" />
+							<MapPin size={20} className="ml-1" />
 							{university}
 						</p>
 					</span>
