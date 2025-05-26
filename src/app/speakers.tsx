@@ -82,7 +82,7 @@ export default function Speakers() {
 											{speaker.panel}
 										</h2>
 
-										<p className="text-gray-600 mb-6 text-lg leading-relaxed">{speaker.panelDesc}</p>
+										<p className="text-primary mb-6 text-lg leading-relaxed">{speaker.panelDesc}</p>
 
 										<div className="flex items-center text-gray-500 mb-6">
 											<Clock className="h-5 w-5 mr-2 text-secondary" />

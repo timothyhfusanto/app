@@ -8,8 +8,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 1.2966,     // Latitude of NUS
-  lng: 103.7764,   // Longitude of NUS
+  lat: 1.30414,
+  lng: 103.7730,
 };
 
 export default function VenueMap() {
@@ -19,13 +19,15 @@ export default function VenueMap() {
   });
 
   return isLoaded ? (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={center}
-      zoom={15}
-    >
-      <Marker position={center} />
-    </GoogleMap>
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={15}
+      >
+        <Marker position={center} />
+      </GoogleMap>
+    
+
   ) : (
     <p>Loading map...</p>
   );

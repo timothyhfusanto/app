@@ -19,7 +19,7 @@ export const speakers = [
   },
   {
     name: "Dr Aaron Maniam",
-    position: "Fellow of Practice and Director, Digital Transformation Education",
+    position: "Fellow of Practice and Director Digital Transformation Education",
     university: "Oxford University",
     image: aaron,
     link: "https://www.bsg.ox.ac.uk/people/aaron-maniam-0",
@@ -45,8 +45,8 @@ export const speakers = [
   },
   {
     name: "Professor Andrew Przybylski",
-    position: "Oxford Internet Institute",
-    university: "University of Oxford",
+    position: "Professor Oxford Internet Institute",
+    university: "Oxford University",
     image: andrew,
     link: "https://www.oii.ox.ac.uk/people/profiles/andrew-przybylski/",
     panelNum: "IV",
