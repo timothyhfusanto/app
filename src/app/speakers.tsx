@@ -52,7 +52,7 @@ export default function Speakers() {
 										<Image
 											src={speaker.image || "/placeholder.svg"}
 											alt={speaker.name}
-											className="w-full object-cover h-[450px] transition-transform duration-300 ease-in-out group-hover:scale-110"
+											className="w-full object-cover h-[500px] transition-transform duration-300 ease-in-out group-hover:scale-110"
 										/>
 
 										{/* Speaker Info Overlay */}
