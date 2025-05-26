@@ -15,10 +15,11 @@ export const speakers = [
     panelDesc:
       "This panel explores how conversational agents are transforming service delivery and user engagement in fields like healthcare, education, and public service.",
     layout: "left",
+    time: "Day 1, 09:30 AM - 12:30 AM",
   },
   {
     name: "Dr Aaron Maniam",
-    position: "Fellow of Practice and Director Digital Transformation Education",
+    position: "Fellow of Practice and Director, Digital Transformation Education",
     university: "Oxford University",
     image: aaron,
     link: "https://www.bsg.ox.ac.uk/people/aaron-maniam-0",
@@ -27,6 +28,7 @@ export const speakers = [
     panelDesc:
       "Learn how OCR and NLP technologies are being used to digitize, analyze, and preserve cultural heritage materials across disciplines.",
     layout: "right",
+    time: "Day 1, 02:00 PM - 05:00 PM",
   },
   {
     name: "Professor Alex Pentland",
@@ -35,21 +37,22 @@ export const speakers = [
     image: alex,
     link: "https://www.media.mit.edu/people/sandy/overview/",
     panelNum: "III",
-    panel: "AI-Driven Simulation for Policy",
+    panel: "Simulations for Computational Social Science",
     panelDesc:
       "This panel discusses how AI-powered simulations can support policy-making by modeling complex social, economic, and environmental systems.",
     layout: "left",
+    time: "Day 2, 09:30 AM - 12:30 AM",
   },
   {
     name: "Professor Andrew Przybylski",
-    position: "Professor of Oxford Internet Institute",
-    university: "Oxford University",
+    position: "Oxford Internet Institute",
+    university: "University of Oxford",
     image: andrew,
     link: "https://www.oii.ox.ac.uk/people/profiles/andrew-przybylski/",
     panelNum: "IV",
-    panel: "AI-Driven Simulation for Policy",
-    panelDesc:
-      "This panel discusses how AI-powered simulations can support policy-making by modeling complex social, economic, and environmental systems.",
+    panel: "Computational methods for studying human interactions",
+    panelDesc: "This panel explores how computational methods can be used to study human interactions, including social media analysis, network analysis, and behavioral modeling.",
     layout: "right",
+    time: "Day 2, 02:00 PM - 05:00 PM",
   },
 ];

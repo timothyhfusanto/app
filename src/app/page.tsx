@@ -8,7 +8,7 @@ import Registration from "./registration";
 import Venue from "./venue";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { AlarmClock, Calendar, CalendarDays, ChevronRight, Clock, MapPin } from "lucide-react";
+import { AlarmClock, Calendar, ChevronRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
@@ -44,7 +44,7 @@ export default function Home() {
     <>
       <section
         id="home"
-        className="relative min-h-screen w-full flex items-center justify-center "
+        className="relative min-h-screen w-full flex items-center justify-center"
       >
         {/* Background Image */}
         <Image
@@ -67,7 +67,7 @@ export default function Home() {
             Singapore , National University of Singapore
           </motion.p>
           <motion.h1
-            className="text-6xl lg:text-7xl max-w-4xl font-bold leading-tight uppercase tracking-tight"
+            className="text-6xl lg:text-7xl  font-bold leading-tight uppercase tracking-tight"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}

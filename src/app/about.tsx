@@ -1,9 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import nus2 from "../../public/images/nus/nus3.jpg";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe, Lightbulb, Users } from "lucide-react";
+import { Globe, Lightbulb, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,8 +8,14 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function About() {
 	return (
 		<section id="about" className="min-h-screen w-full items-center justify-center">
-			<motion.div className="bg-gradient-to-r from-blue-50 to-orange-50 py-20">
-				<div className="container mx-auto px-4">
+			<div className="bg-gradient-to-r from-blue-50 to-orange-50 py-20">
+				<motion.div
+					className="container mx-auto px-4"
+					initial={{ opacity: 0, y: -50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ delay: 0.2, duration: 0.8 }}
+					viewport={{ once: true }}
+				>
 					<div className="max-w-4xl mx-auto text-center">
 						<h1 className="text-5xl md:text-6xl font-bold text-blue-800 mb-6">ABOUT US</h1>
 						<p className="text-xl text-gray-600 leading-relaxed">
@@ -20,8 +23,8 @@ export default function About() {
 							computational methods with social science and humanities research.
 						</p>
 					</div>
-				</div>
-			</motion.div>
+				</motion.div>
+			</div>
 			<div className="container mx-auto px-10 py-20 gap-4">
 				<div className="flex flex-col justify-center h-full text-primary gap-8">
 					<motion.h2
@@ -54,15 +57,22 @@ export default function About() {
 							</Link>
 						</span>
 					</motion.p>
-					<motion.div
-						className="text-primary"
-						initial={{ opacity: 0, x: 50 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						transition={{ delay: 0.6, duration: 0.8 }}
-						viewport={{ once: true }}
-					>
-						<h2 className="text-3xl font-bold mb-8">What to Expect</h2>
-						<div className="grid md:grid-cols-3 gap-8">
+					<div className="text-primary">
+						<motion.h2 className="text-3xl font-bold mb-8"
+							initial={{ opacity: 0, x: 50 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.2, duration: 0.8 }}
+							viewport={{ once: true }}
+						>
+							What to Expect
+						</motion.h2>
+						<motion.div
+							className="grid md:grid-cols-3 gap-8"
+							initial={{ opacity: 0, x: 50 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ delay: 0.4, duration: 0.8 }}
+							viewport={{ once: true }}
+						>
 							<Card className="border-l-4 border-l-blue-500">
 								<CardContent className="p-6">
 									<Users className="h-12 w-12 text-blue-500 mb-4" />
@@ -93,8 +103,8 @@ export default function About() {
 									</p>
 								</CardContent>
 							</Card>
-						</div>
-					</motion.div>
+						</motion.div>
+					</div>
 					{/* <motion.div
 						initial={{ opacity: 0, x: 50 }}
 						whileInView={{ opacity: 1, x: 0 }}
