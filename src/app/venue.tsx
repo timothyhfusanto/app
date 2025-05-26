@@ -1,7 +1,7 @@
 import { Calendar, Mail, MapPin, Phone, User } from "lucide-react";
 import VenueMap from "../components/mapvenue";
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Venue() {
 	return (
@@ -32,56 +32,41 @@ export default function Venue() {
 					<VenueMap />
 
 				</motion.div>
-				<motion.div
-					className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8 text-primary"
-					initial={{ opacity: 0, y: -50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.4, duration: 0.8 }}
-					viewport={{ once: true }}
-				>
-					<div>
-						<div className='flex items-center'>
-							<p className="flex items-center font-semibold"><MapPin className='mr-2' size={20} />Location</p>
-						</div>
-						<p className="text-primary leading-loose font-light">
-							LT 52, Level 2, Stephen Riady Centre, University Town, NUS, 2 College Ave W, Singapore 138607
-						</p>
-					</div>
-					<div>
+				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+					<Card className="text-primary">
+						<CardContent className="p-6 text-center">
+							<MapPin className="h-8 w-8 text-secondary mx-auto mb-4" />
+							<h3 className="font-semibold mb-2">Location</h3>
+							<p className="text-sm">
+								LT 52, Level 2, Stephen Riady Centre, University Town, NUS, 2 College Ave W, Singapore 138607
+							</p>
+						</CardContent>
+					</Card>
 
-						<div className='flex items-center'>
-							<p className="flex items-center font-semibold"><Calendar className='mr-2' size={20} />Conference Date</p>
-						</div>
-						<p className="text-primary leading-loose font-light">
-							29 July - 30 July 2025
-						</p>
-					</div>
-				</motion.div>
-				<motion.div
-					className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4 text-primary"
-					initial={{ opacity: 0, y: -50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.4, duration: 0.8 }}
-					viewport={{ once: true }}
-				>
-					<div>
-						<div className='flex items-center'>
-							<p className="flex items-center font-semibold"><User className='mr-2' size={20} />Contact Person</p>
-						</div>
-						<p className="text-primary leading-loose font-light">
-							Carol Tan
-						</p>
-					</div>
+					<Card className="text-primary">
+						<CardContent className="p-6 text-center">
+							<Calendar className="h-8 w-8 mx-auto text-secondary mb-4" />
+							<h3 className="font-semibold mb-2">Conference Date</h3>
+							<p className="text-sm">29 July - 30 July 2025</p>
+						</CardContent>
+					</Card>
 
-					<div>
-						<div className='flex items-center'>
-							<p className="flex items-center font-semibold"><Mail className='mr-2' size={20} />Email</p>
-						</div>
-						<a href="mailto:carol_tan@nus.edu.sg" className="text-primary leading-loose hover:underline font-light">
-							carol_tan@nus.edu.sg
-						</a>
-					</div>
-				</motion.div>
+					<Card className="text-primary">
+						<CardContent className="p-6 text-center">
+							<User className="h-8 w-8 text-secondary mx-auto mb-4" />
+							<h3 className="font-semibold  mb-2">Contact Person</h3>
+							<p className="text-sm">Carol Tan</p>
+						</CardContent>
+					</Card>
+
+					<Card className="text-primary">
+						<CardContent className="p-6 text-center">
+							<Mail className="h-8 w-8 text-secondary mx-auto mb-4" />
+							<h3 className="font-semibold mb-2">Email</h3>
+							<p className="text-sm ">carol_tan@nus.edu.sg</p>
+						</CardContent>
+					</Card>
+				</div>
 			</div>
 		</section >
 	);
