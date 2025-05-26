@@ -13,7 +13,7 @@ import {
 } from "./ui/sheet";
 import { ArrowRight } from "lucide-react";
 
-const sections = ["home", "about", "speakers", "registration", "venue"];
+const sections = ["home", "about", "speakers", "programme", "registration", "venue"];
 
 export function Navbar() {
 	const [activeSection, setActiveSection] = useState("home");

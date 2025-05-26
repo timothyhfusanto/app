@@ -11,6 +11,7 @@ import { Card } from "@/components/ui/card";
 import { AlarmClock, Calendar, ChevronRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import Programme from "./programme";
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -139,6 +140,7 @@ export default function Home() {
       </section>
       <About />
       <Speakers />
+      <Programme />
       <Registration />
       <Venue />
     </>
