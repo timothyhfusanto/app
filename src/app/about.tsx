@@ -19,7 +19,7 @@ export default function About() {
 					<div className="max-w-4xl mx-auto text-center">
 						<h1 className="text-5xl md:text-6xl font-bold text-blue-800 mb-6">ABOUT US</h1>
 						<p className="text-xl text-gray-600 leading-relaxed">
-							Discover the vision behind NUS CSSH's inaugural research symposium and learn how we're bridging
+							Discover the vision behind NUS CSSH&apos;s inaugural research symposium and learn how we&apos;re bridging
 							computational methods with social science and humanities research.
 						</p>
 					</div>
