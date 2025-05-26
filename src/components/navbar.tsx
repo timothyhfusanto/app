@@ -78,7 +78,7 @@ export function Navbar() {
 						<button
 							key={section}
 							onClick={() => handleScrollToSection(section)}
-							className={`text-md uppercase cursor-pointer font-semibold hover:text-secondary ${activeSection === section ? "text-secondary" : "text-primary"}`}
+							className={`text-md uppercase cursor-pointer font-medium hover:text-secondary ${activeSection === section ? "text-secondary" : "text-primary"}`}
 						>
 							{section}
 						</button>
@@ -89,6 +89,7 @@ export function Navbar() {
 				<div className="hidden lg:flex items-center">
 					<Button
 						className="px-10 cursor-pointer relative overflow-hidden group"
+						onClick={() => window.open("https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-gu5ccVBafY5GvEBKHtyMV6FUQzJYNkRVMFY3V1dLMDNCVUtPMUZTMFpERy4u", "_blank")}
 					>
 						REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 					</Button>
@@ -112,7 +113,7 @@ export function Navbar() {
 										onClick={() => {
 											handleScrollToSection(section);
 										}}
-										className={`block w-full text-left font-semibold text-md uppercase ${activeSection === section
+										className={`block w-full text-left font-medium text-md uppercase ${activeSection === section
 											? "text-secondary"
 											: "text-primary"
 											}`}
@@ -122,7 +123,7 @@ export function Navbar() {
 								))}
 								<Button
 									className="w-full mt-4 relative overflow-hidden group"
-
+									onClick={() => window.open("https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-gu5ccVBafY5GvEBKHtyMV6FUQzJYNkRVMFY3V1dLMDNCVUtPMUZTMFpERy4u", "_blank")}
 								>
 									REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 								</Button>

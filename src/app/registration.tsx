@@ -30,6 +30,7 @@ export default function Registration() {
 				>
 					<Button
 						className="px-10 py-6 text-lg cursor-pointer relative overflow-hidden group"
+						onClick={() => window.open("https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-gu5ccVBafY5GvEBKHtyMV6FUQzJYNkRVMFY3V1dLMDNCVUtPMUZTMFpERy4u", "_blank")}
 					>
 						REGISTER NOW <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 					</Button>

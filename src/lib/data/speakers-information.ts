@@ -1,11 +1,12 @@
 import elena from "../../../public/images/speakers/elena.jpg";
 import aaron from "../../../public/images/speakers/aaron.jpg";
 import alex from "../../../public/images/speakers/alex.avif";
+import andrew from "../../../public/images/speakers/andrew.jpg";
 
 export const speakers = [
   {
-    name: "Elena Kagan",
-    position: "Chair of Business Administration",
+    name: "Professor Elena Karahanna",
+    position: "Distinguished Research Professor in Business Administration",
     university: "University of Georgia",
     image: elena,
     link: "https://www.terry.uga.edu/directory/elena-karahanna/",
@@ -16,11 +17,11 @@ export const speakers = [
     layout: "left",
   },
   {
-    name: "Aaron Maniam",
-    position: "Director of Digital Transformation Education",
-    university: "University of Oxford, Blavatnik School of Government",
+    name: "Dr Aaron Maniam",
+    position: "Fellow of Practice and Director Digital Transformation Education",
+    university: "Oxford University",
     image: aaron,
-    link: "https://en.wikipedia.org/wiki/Aaron_Maniam",
+    link: "https://www.bsg.ox.ac.uk/people/aaron-maniam-0",
     panelNum: "II",
     panel: "OCR and NLP for Cultural Heritage",
     panelDesc:
@@ -28,15 +29,27 @@ export const speakers = [
     layout: "right",
   },
   {
-    name: "Alex Pentland",
-    position: "Toshiba Professor",
+    name: "Professor Alex Pentland",
+    position: "Professor of Media Arts and Sciences",
     university: "Massachusetts Institute of Technology",
     image: alex,
-    link: "https://en.m.wikipedia.org/wiki/Alex_Pentland",
+    link: "https://www.media.mit.edu/people/sandy/overview/",
     panelNum: "III",
     panel: "AI-Driven Simulation for Policy",
     panelDesc:
       "This panel discusses how AI-powered simulations can support policy-making by modeling complex social, economic, and environmental systems.",
     layout: "left",
+  },
+  {
+    name: "Professor Andrew Przybylski",
+    position: "Professor of Oxford Internet Institute",
+    university: "Oxford University",
+    image: andrew,
+    link: "https://www.oii.ox.ac.uk/people/profiles/andrew-przybylski/",
+    panelNum: "IV",
+    panel: "AI-Driven Simulation for Policy",
+    panelDesc:
+      "This panel discusses how AI-powered simulations can support policy-making by modeling complex social, economic, and environmental systems.",
+    layout: "right",
   },
 ];

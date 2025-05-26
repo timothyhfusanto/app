@@ -19,10 +19,10 @@ export function SpeakerCard({ name, position, university, image, link, panelNum,
 					<div className="absolute inset-0 bg-black opacity-30 z-10 pointer-events-none" />
 
 					<span className="absolute bottom-3 right-5 flex flex-col gap-1 text-right items-end text-white z-20">
-						<p className="text-4xl font-semibold">{name}</p>
-						<p className="text-md font-light">{position}</p>
-						<p className="flex flex-row-reverse items-center justify-end text-md font-light">
-							<MapPin size={20} className="ml-1" />
+						<p className="text-2xl font-semibold">{name}</p>
+						<p className="text-sm font-light">{position}</p>
+						<p className="flex flex-row-reverse items-center justify-end text-sm font-light">
+							<MapPin size={17} className="ml-1" />
 							{university}
 						</p>
 					</span>
@@ -42,11 +42,11 @@ export function SpeakerCard({ name, position, university, image, link, panelNum,
 					/>
 					<div className="absolute inset-0 bg-black opacity-30 z-10 pointer-events-none" />
 
-					<span className="absolute bottom-3 flex flex-col gap-1 text-left left-5 text-white z-20">
-						<p className="text-4xl font-semibold">{name}</p>
-						<p className="text-md font-light">{position}</p>
-						<p className="flex text-md font-light">
-							<MapPin size={20} className="mr-1" /> {university}
+					<span className="absolute bottom-3 justify-center flex flex-col gap-1 text-left left-5 text-white z-20">
+						<p className="text-2xl font-semibold">{name}</p>
+						<p className="text-sm font-light">{position}</p>
+						<p className="flex text-sm font-light">
+							<MapPin size={17} className="mr-1" /> {university}
 						</p>
 					</span>
 				</div>
