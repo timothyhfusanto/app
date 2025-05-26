@@ -57,10 +57,10 @@ export default function Speakers() {
 
 										{/* Speaker Info Overlay */}
 										<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-											<div className="absolute bottom-2 left-5 right-0 text-white">
-												<h3 className="text-2xl md:text-3xl font-bold mb-2">{speaker.name}</h3>
-												<p className="text-lg font-medium mb-1 text-orange-300">{speaker.position}</p>
-												<p className="flex items-center text-gray-200 mb-4">
+											<div className="absolute bottom-5 left-5 right-0 text-white">
+												<h3 className="text-2xl md:text-4xl font-bold mb-2">{speaker.name}</h3>
+												<p className="text-md md:text-xl font-medium mb-1 text-orange-300">{speaker.position}</p>
+												<p className="flex items-center text-gray-200 text-md md:text-lg mb-4">
 													<MapPin className="h-4 w-4 mr-2" />
 													{speaker.university}
 												</p>
