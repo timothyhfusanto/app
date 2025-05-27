@@ -39,7 +39,7 @@ export default function Programme() {
 					<div className="flex justify-center gap-4">
 						<Button
 							onClick={() => setSelectedDay("day1")}
-							className={`px-10 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day1"
+							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day1"
 								? "bg-orange-500 text-white shadow-lg"
 								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
 								}`}
@@ -48,7 +48,7 @@ export default function Programme() {
 						</Button>
 						<Button
 							onClick={() => setSelectedDay("day2")}
-							className={`px-10 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day2"
+							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day2"
 								? "bg-orange-500 text-white shadow-lg"
 								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
 								}`}

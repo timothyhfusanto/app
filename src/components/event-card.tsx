@@ -20,7 +20,7 @@ export default function EventCard({ event }: { event: Event }) {
 		<Card>
 			<CardContent className="px-10 py-6">
 				<div className="grid grid-cols-1 lg:grid-cols-12 p-4 gap-6">
-					<div className="flex justify-start items-center text-center lg:border-r-2 text-gray-500 lg:col-span-3 p-4 lg:p-0">
+					<div className="flex justify-start items-center text-center lg:border-r-2 text-gray-500 lg:col-span-3">
 						<Clock className="mr-2 h-4 w-4" /> <p className="text-xl">{event.time}</p>
 					</div>
 					<div className="flex flex-col lg:col-span-9 gap-8">
