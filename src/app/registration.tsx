@@ -8,7 +8,7 @@ export default function Registration() {
 	return (
 		<section
 			id="registration"
-			className="min-h-screen w-full grid grid-cols-1 md:grid-cols-12"
+			className="min-h-screen w-full grid grid-cols-1 md:grid-cols-12 bg-gray-50"
 		>
 			<motion.div
 				className="container mx-auto max-w-2xl px-10 py-20 flex flex-col md:col-span-7 justify-center h-full gap-8"

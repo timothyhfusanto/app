@@ -10,7 +10,7 @@ export default function Speakers() {
 	return (
 		<section
 			id="speakers"
-			className="min-h-screen w-full bg-gray-100 items-center justify-center"
+			className="min-h-screen w-full bg-gray-50 items-center justify-center"
 		>
 			<div className="flex flex-col h-full container mx-auto px-10 py-20">
 				<div className="flex flex-col items-center gap-4 justify-center text-center">

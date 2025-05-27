@@ -7,7 +7,7 @@ export default function Venue() {
 	return (
 		<section
 			id="venue"
-			className="min-h-screen w-full flex flex-col justify-center px-8 py-20 bg-gray-100"
+			className="min-h-screen w-full flex flex-col justify-center px-8 py-20"
 		>
 			<div className="container mx-auto px-4">
 				<motion.div
