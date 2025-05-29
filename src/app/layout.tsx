@@ -20,22 +20,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CSSH Workshop",
-  description: "Join us for an exciting workshop on the impact of information systems research, hosted by the National University of Singapore.",
+  title: "CSSH Symposium",
+  description: "Join us for an exciting symposium on the impact of information systems research, hosted by the National University of Singapore.",
   icons: {
     icon: "/favicon.ico",
   },
-  keywords: ["CSSH Workshop", "NUS", "Information Systems", "Academic Conference", "Digital Transformation"],
+  keywords: ["CSSH Symposium", "NUS", "Information Systems", "Academic Conference", "Digital Transformation"],
   authors: [
-    { name: "CSSH Organizing Committee", url: "https://csshworkshop.vercel.app" },
+    { name: "Centre for Computational Social Science and Humanities", url: "https://csshworkshop.vercel.app" },
   ],
-  creator: "CSSH Workshop Team",
+  creator: "Centre for Computational Social Science and Humanities",
   metadataBase: new URL("https://csshworkshop.vercel.app"),
   openGraph: {
-    title: "CSSH Workshop",
-    description: "Join us for an exciting workshop on the impact of information systems research, hosted by the National University of Singapore.",
+    title: "CSSH Symposium",
+    description: "Join us for an exciting symposium on the impact of information systems research, hosted by the National University of Singapore.",
     url: "https://csshworkshop.vercel.app",
-    siteName: "CSSH Workshop",
+    siteName: "CSSH Symposium",
     locale: "en_SG",
     type: "website",
   }
