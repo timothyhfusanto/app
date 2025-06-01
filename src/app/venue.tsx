@@ -1,5 +1,5 @@
 import { Calendar, Mail, MapPin, User } from "lucide-react";
-import VenueMap from "../components/mapvenue";
+import VenueMap from "../components/own/mapvenue";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 

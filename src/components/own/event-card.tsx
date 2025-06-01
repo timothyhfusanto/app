@@ -1,5 +1,5 @@
 import { Circle, Clock, User, Users } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
+import { Card, CardContent } from "../ui/card";
 
 type Event = {
 	content: EventContent[];

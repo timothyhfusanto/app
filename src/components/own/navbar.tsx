@@ -1,16 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import Nus from "../../public/images/nus/nus.png";
+import Nus from "../../../public/images/nus/nus.png";
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import {
 	Sheet,
 	SheetTrigger,
 	SheetContent,
 	SheetHeader,
 	SheetTitle,
-} from "./ui/sheet";
+} from "../ui/sheet";
 import { ArrowRight } from "lucide-react";
 
 const sections = ["home", "about", "speakers", "programme", "registration", "venue"];
