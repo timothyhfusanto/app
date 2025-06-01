@@ -1,6 +1,6 @@
 import elena from "../../../public/images/speakers/elena.jpg";
 import aaron from "../../../public/images/speakers/aaron.jpg";
-import alex from "../../../public/images/speakers/alex.avif";
+import alex from "../../../public/images/speakers/alex2.jpg";
 import andrew from "../../../public/images/speakers/andrew.jpg";
 
 export const speakers = [
