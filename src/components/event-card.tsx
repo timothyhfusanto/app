@@ -60,15 +60,16 @@ export default function EventCard({ event }: { event: Event }) {
 										<div key={idx} className="flex items-center gap-2 text-md text-gray-700">
 											<Circle className="h-3 w-3 text-secondary" fill="#ef7c00" />
 											{participant.professor && (
-												<>
+												<p>
 													<a
 														href={participant.link}
 														target="_blank"
 														rel="noopener noreferrer"
 													>
-														<span className="text-secondary font-semibold underline hover:text-amber-400">{participant.professor}</span>{participant.description ? `, ${participant.description}` : ""}
+														<span className="text-secondary font-semibold underline hover:text-amber-400">{participant.professor}</span>
 													</a>
-												</>
+													{participant.description ? `, ${participant.description}` : ""}
+												</p>
 											)}
 										</div>
 									))
