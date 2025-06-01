@@ -72,11 +72,6 @@ export default function Speakers() {
 									<div
 										className={`p-8 flex flex-col justify-center bg-white ${index % 2 === 1 ? "lg:col-start-1" : ""}`}
 									>
-										<div className="mb-4">
-											<span className="bg-blue-100 text-primary px-4 py-2 rounded-full text-sm font-bold tracking-wide">
-												Panel {speaker.panelNum}
-											</span>
-										</div>
 
 										<h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 leading-tight">
 											{speaker.panel}
@@ -84,11 +79,7 @@ export default function Speakers() {
 
 										<p className="text-primary mb-6 text-lg leading-relaxed">{speaker.panelDesc}</p>
 
-										<div className="flex items-center text-gray-500 mb-6">
-											<Clock className="h-5 w-5 mr-2 text-secondary" />
-											<span className="font-medium">{speaker.time}</span>
-										</div>
-
+										
 										<div className="flex flex-col sm:flex-row gap-3">
 											<Button
 												className="bg-orange-500 hover:bg-orange-600 text-white"

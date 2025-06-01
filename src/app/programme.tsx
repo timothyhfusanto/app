@@ -73,7 +73,7 @@ export default function Programme() {
 					<p className="text-gray-600">Detailed schedule for the day</p>
 				</motion.div>
 				<div className="grid grid-cols-1 gap-6 mt-10">
-					<div className="flex flex-col gap-8">
+					<div className="flex flex-col gap-10">
 						{schedule.map((event, index) => (
 							<motion.div
 								initial={{ opacity: 0, y: -50 }}

@@ -1,9 +1,10 @@
-import { Circle, Clock, Users } from "lucide-react";
+import { Circle, Clock, User, Users } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 type Event = {
 	content: EventContent[];
 	time: string;
+	type: string;
 }
 
 type EventContent = {
@@ -15,9 +16,19 @@ type EventContent = {
 	moderator?: { professor?: string, link?: string, description?: string };
 }
 
+const determineEventType = (e : Event) => {
+	if (e.type === "admin") {
+		return "bg-yellow-50 border-l-4 border-l-yellow-500";
+	} else if (e.type === "keynote") {
+		return "bg-blue-50 border-l-4 border-l-blue-500";
+	} else {
+		return "bg-green-50 border-l-4 border-l-green-500";
+	}
+}
+
 export default function EventCard({ event }: { event: Event }) {
 	return (
-		<Card>
+		<Card className={`shadow-lg transition-all duration-500 ${determineEventType(event)}`}>
 			<CardContent className="px-10">
 				<div className="grid grid-cols-1 lg:grid-cols-12 p-4 gap-6">
 					<div className="flex justify-start items-center text-center lg:border-r-2 text-gray-500 lg:col-span-3">
@@ -26,16 +37,19 @@ export default function EventCard({ event }: { event: Event }) {
 					<div className="flex flex-col lg:col-span-9 gap-8">
 						{event.content.map((eventItem, index) => (
 							<div key={index} className="flex flex-col gap-4 justify-center">
-								<h3 className={`text-2xl font-bold text-primary flex ${eventItem.title === "Participants: " || eventItem.title === "Moderator: " ? "text-xl font-normal" : ""}`}>
+								<h3 className={`text-2xl font-bold text-primary flex ${eventItem.title === "Participants: " || eventItem.title === "Moderator: " || eventItem.title === "Speaker: " ? "text-xl font-semibold" : ""}`}>
 									{eventItem.title === "Participants: " && <>
 										<Users /> &nbsp;
+									</>}
+									{eventItem.title === "Speaker: " && <>
+										<User /> &nbsp;
 									</>}
 									{eventItem.title}
 								</h3>
 								{eventItem.professor && (
 									<p className="text-gray-700 text-md">
 										<a href={eventItem.link} target="_blank" rel="noopener noreferrer">
-											<span className="text-secondary underline hover:text-amber-400">{eventItem.professor}</span>
+											<span className="text-secondary font-semibold underline hover:text-amber-400">{eventItem.professor}</span>
 										</a>
 										{eventItem.description && `, ${eventItem.description}`}
 									</p>
@@ -52,7 +66,7 @@ export default function EventCard({ event }: { event: Event }) {
 														target="_blank"
 														rel="noopener noreferrer"
 													>
-														<span className="text-secondary underline hover:text-amber-400">{participant.professor}</span>{participant.description ? `, ${participant.description}` : ""}
+														<span className="text-secondary font-semibold underline hover:text-amber-400">{participant.professor}</span>{participant.description ? `, ${participant.description}` : ""}
 													</a>
 												</>
 											)}
@@ -65,7 +79,7 @@ export default function EventCard({ event }: { event: Event }) {
 										{eventItem.moderator.professor && (
 											<>
 												<a href={eventItem.moderator.link} target="_blank" rel="noopener noreferrer">
-													<span className="text-secondary underline hover:text-amber-400">{eventItem.moderator.professor}</span>
+													<span className="text-secondary font-semibold underline hover:text-amber-400">{eventItem.moderator.professor}</span>
 												</a>
 												{eventItem.moderator.description ? `, ${eventItem.moderator.description}` : ""}
 											</>
