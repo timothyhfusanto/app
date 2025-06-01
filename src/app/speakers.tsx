@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { speakers } from "../lib/data/speakers-information";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { Clock, ExternalLink, MapPin } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Speakers() {
