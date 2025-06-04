@@ -190,7 +190,7 @@ export const day2 = [
 				{
 					professor: "Aaron Maniam",
 					link: "https://www.bsg.ox.ac.uk/people/aaron-maniam-0",
-					description: "Oxford University",
+					description: "Fellow of Practice and Director Digital Transformation Education, Oxford University"
 				},
 				{
 					professor: "Subhayan Mukerjee",
