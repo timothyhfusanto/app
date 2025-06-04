@@ -13,12 +13,12 @@ export const day1 = [
 			title: "Opening Remarks",
 			professor: "Professor Lionel Wee",
 			link: "https://discovery.nus.edu.sg/304-hock-ann-lionel-wee",
-			description: "Dean of the Faculty of Arts and Social Sciences, NUS",
+			description: "Dean of the Faculty of Arts and Social Sciences, National University of Singapore",
 		}, {
 			title: "Welcome Address",
 			professor: "Professor Atreyi Kankanhalli",
 			link: "https://www.comp.nus.edu.sg/disa/people/atreyi/",
-			description: "Co-Director Centre for Computational Social Science and Humanities, NUS",
+			description: "Co-Director Centre for Computational Social Science and Humanities, National University of Singapore",
 		}],
 		type: "admin"
 	},
@@ -57,7 +57,7 @@ export const day1 = [
 				{
 					professor: "Jungup Lee",
 					link: "https://discovery.nus.edu.sg/11058-jungup-lee",
-					description: "Department of Social Work, NUS",
+					description: "Department of Social Work, National University of Singapore",
 				},
 				{
 					professor: "Andrew Przybylski",
@@ -65,9 +65,9 @@ export const day1 = [
 					description: "Oxford Internet Institute, University of Oxford",
 				},
 				{
-					professor: "Dongwon Oh",
+					professor: "DongWon Oh",
 					link: "https://dongwonoh.com/",
-					description: "Department of Psychology, NUS",
+					description: "Department of Psychology, National University of Singapore",
 				}
 			],
 		},
@@ -76,7 +76,7 @@ export const day1 = [
 			moderator: {
 				professor: "Atreyi Kankanhalli",
 				link: "https://www.comp.nus.edu.sg/disa/people/atreyi/",
-				description: "Co-Director CSSH, NUS",
+				description: "Co-Director Centre for Computational Social Science and Humanities, National University of Singapore",
 			}
 		}],
 		type: "panel"
@@ -124,17 +124,17 @@ export const day1 = [
 				{
 					professor: "Maria de Iorio",
 					link: 'https://discovery.nuhs.edu.sg/2096-maria-de-iorio',
-					description: "Department of Paediatrics, NUS",
+					description: "Department of Paediatrics, National University of Singapore",
 				},
 				{
 					professor: "Natalie Pang",
 					link: "https://discovery.nus.edu.sg/11678-lee-san-natalie-pang",
-					description: "Department of Communications & New Media, NUS",
+					description: "Department of Communications and New Media, National University of Singapore",
 				},
 				{
 					professor: "Du Lin",
 					link: "https://fass.nus.edu.sg/cs/people/du-lin-%E6%9D%9C%E7%90%B3/",
-					description: "Chinese Studies and Japanese Studies, NUS",
+					description: "Chinese Studies and Japanese Studies, National University of Singapore",
 				}
 			],
 		},
@@ -143,7 +143,7 @@ export const day1 = [
 			moderator: {
 				professor: "Miguel Escobar Varela",
 				link: "https://miguelescobar.com/",
-				description: "Deputy Director CSSH, NUS",
+				description: "Deputy Director Centre for Computational Social Science and Humanities, NUS",
 			},
 		}],
 		type: "panel"
@@ -195,26 +195,26 @@ export const day2 = [
 				{
 					professor: "Subhayan Mukerjee",
 					link: "https://discovery.nus.edu.sg/19113-subhayan-mukerjee",
-					description: "Dept. of Communications & New Media, NUS",
+					description: "Department of Communications and New Media, National University of Singapore",
 				},
 				{
 					professor: "Kenneth Benoit",
 					link: "https://faculty.smu.edu.sg/profile/kenneth-benoit-7891",
-					description: "SMU",
+					description: "Singapore Management University",
 				},
 				{
 					professor: "Bernice Khoo",
 					link: "https://www.nscc.sg/team/item/dr-bernice-khoo/",
-					description: "Director (National AI Group - Research), MDDI",
+					description: "Director (National AI Group - Research), Ministry of Digital Development and Information, Singapore",
 				},
-				
+
 			],
 		}, {
 			title: "Moderator: ",
 			moderator: {
 				professor: "Qiao Dandan",
 				link: "https://www.comp.nus.edu.sg/disa/people/qiaodd/",
-				description: "Deputy Director CSSH, NUS",
+				description: "Deputy Director Centre for Computational Social Science and Humanities, National University of Singapore",
 			}
 		}],
 		type: "panel"
@@ -247,7 +247,7 @@ export const day2 = [
 			title: "Closing",
 			professor: "Miguel Escobar Varela",
 			link: "https://miguelescobar.com/",
-			description: "Deputy Director CSSH, NUS",
+			description: "Deputy Director Centre for Computational Social Science and Humanities, National University of Singapore",
 		}],
 		type: "admin"
 	}
