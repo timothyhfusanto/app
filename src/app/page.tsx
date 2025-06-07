@@ -131,7 +131,7 @@ export default function Home() {
           >
             <Button
               className="px-20 py-8 font-bold text-xl cursor-pointer relative overflow-hidden group bg-secondary hover:bg-amber-500"
-              onClick={() => window.open("https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-gu5ccVBafY5GvEBKHtyMV6FUQzJYNkRVMFY3V1dLMDNCVUtPMUZTMFpERy4u", "_blank")}
+              onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
             >
               REGISTER NOW <span><ChevronRight className="transition-transform group-hover:translate-x-2" /></span>
             </Button>

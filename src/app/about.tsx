@@ -52,7 +52,7 @@ export default function About() {
 						<br />
 						To register for the event, please fill out the registration form&nbsp;
 						<span className="text-secondary underline hover:text-amber-400">
-							<Link href="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-gu5ccVBafY5GvEBKHtyMV6FUQzJYNkRVMFY3V1dLMDNCVUtPMUZTMFpERy4u" target="_blank">
+							<Link href="https://forms.office.com/r/B3qmKrkDC5" target="_blank">
 								here
 							</Link>
 						</span>

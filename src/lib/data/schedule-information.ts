@@ -13,7 +13,7 @@ export const day1 = [
 			title: "Opening Remarks",
 			professor: "Professor Lionel Wee",
 			link: "https://discovery.nus.edu.sg/304-hock-ann-lionel-wee",
-			description: "Dean of the Faculty of Arts and Social Sciences, National University of Singapore",
+			description: "Dean Faculty of Arts and Social Sciences, National University of Singapore",
 		}, {
 			title: "Welcome Address",
 			professor: "Professor Atreyi Kankanhalli",
@@ -25,7 +25,7 @@ export const day1 = [
 	{
 		time: "9:30 AM - 10:30 AM",
 		content: [{
-			title: "Keynote: TBC",
+			title: "Keynote: Designing Human-AI Collaborative Work Arrangements",
 		}, {
 			title: "Speaker: ",
 			professor: "Professor Elena Karahanna",
@@ -44,7 +44,7 @@ export const day1 = [
 	{
 		time: "11:00 AM - 12:30 PM",
 		content: [{
-			title: "Panel 1: Computational Methods for Understanding Human Behavior",
+			title: "Panel 1: AI and Human Behavior: Methods and Impacts",
 		},
 		{
 			title: "Participants: ",
@@ -52,23 +52,23 @@ export const day1 = [
 				{
 					professor: "Elena Karahanna",
 					link: "https://www.terry.uga.edu/directory/elena-karahanna/",
-					description: "University of Georgia",
+					description: "Department of Management Information Systems, University of Georgia",
 				},
 				{
 					professor: "Jungup Lee",
 					link: "https://discovery.nus.edu.sg/11058-jungup-lee",
-					description: "Department of Social Work, National University of Singapore",
+					description: "Co-Director Social Service Research Centre, National University of Singapore",
+				},
+				{
+					professor: "DongWon Oh",
+					link: "https://dongwonoh.com/",
+					description: "Department of Psychology, National University of Singapore",
 				},
 				{
 					professor: "Andrew Przybylski",
 					link: "https://www.oii.ox.ac.uk/people/profiles/andrew-przybylski/",
 					description: "Oxford Internet Institute, University of Oxford",
 				},
-				{
-					professor: "DongWon Oh",
-					link: "https://dongwonoh.com/",
-					description: "Department of Psychology, National University of Singapore",
-				}
 			],
 		},
 		{
@@ -91,7 +91,7 @@ export const day1 = [
 	{
 		time: "2:00 PM - 3:00 PM",
 		content: [{
-			title: "Keynote: TBC",
+			title: "Keynote: Artificial Intelligence and Augmented Immersion - Simulations and Serious Play in Public Policy",
 		},
 		{
 			title: "Speaker: ",
@@ -111,7 +111,7 @@ export const day1 = [
 	{
 		time: "3:30 PM - 5:00 PM",
 		content: [{
-			title: "Panel 2: NLP and Computer Vision for Digital Humanities",
+			title: "Panel 2: Computer Vision and NLP for Digital Humanities",
 		},
 		{
 			title: "Participants: ",
@@ -122,20 +122,15 @@ export const day1 = [
 					description: "Director National Library",
 				},
 				{
-					professor: "Maria de Iorio",
-					link: 'https://discovery.nuhs.edu.sg/2096-maria-de-iorio',
-					description: "Department of Paediatrics, National University of Singapore",
+					professor: "Kenneth Dean",
+					link: 'https://ari.nus.edu.sg/people/prof-kenneth-dean/',
+					description: "Department of Chinese Studies, National University of Singapore",
 				},
 				{
-					professor: "Natalie Pang",
-					link: "https://discovery.nus.edu.sg/11678-lee-san-natalie-pang",
-					description: "Department of Communications and New Media, National University of Singapore",
+					professor: "Chao Han",
+					link: "https://discovery.nus.edu.sg/25035-chao-han",
+					description: "Department of Chinese Studies, National University of Singapore",
 				},
-				{
-					professor: "Du Lin",
-					link: "https://fass.nus.edu.sg/cs/people/du-lin-%E6%9D%9C%E7%90%B3/",
-					description: "Chinese Studies and Japanese Studies, National University of Singapore",
-				}
 			],
 		},
 		{
@@ -161,11 +156,11 @@ export const day2 = [
 	{
 		time: "9:30 AM - 10:30 AM",
 		content: [{
-			title: "Keynote: TBC",
+			title: "Keynote: Accelerating Innovation Through Computational Social Science",
 		},
 		{
 			title: "Speaker: ",
-			professor: "Professor Alex Pentland",
+			professor: "Professor Alex ‘Sandy’ Pentland",
 			link: "https://www.media.mit.edu/people/sandy/overview/",
 			description: "Professor of Media Arts and Sciences, Massachusetts Institute of Technology",
 		}],
@@ -200,14 +195,8 @@ export const day2 = [
 				{
 					professor: "Kenneth Benoit",
 					link: "https://faculty.smu.edu.sg/profile/kenneth-benoit-7891",
-					description: "Singapore Management University",
+					description: "Dean School of Social Sciences, Singapore Management University",
 				},
-				{
-					professor: "Bernice Khoo",
-					link: "https://www.nscc.sg/team/item/dr-bernice-khoo/",
-					description: "Director (National AI Group - Research), Ministry of Digital Development and Information, Singapore",
-				},
-
 			],
 		}, {
 			title: "Moderator: ",

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { speakers } from "../lib/data/speakers-information";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { ExternalLink, MapPin } from "lucide-react";
+import { Calendar, Clock, ExternalLink, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Speakers() {
@@ -52,12 +52,12 @@ export default function Speakers() {
 										<Image
 											src={speaker.image || "/placeholder.svg"}
 											alt={speaker.name}
-											className="w-full object-cover h-[500px] transition-transform duration-300 ease-in-out group-hover:scale-110"
+											className="w-full object-cover h-[450px] transition-transform duration-300 ease-in-out group-hover:scale-110"
 										/>
 
 										{/* Speaker Info Overlay */}
 										<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-											<div className="absolute bottom-5 left-5 right-0 text-white">
+											<div className="absolute bottom-2 left-5 right-0 text-white">
 												<h3 className="text-2xl md:text-4xl font-bold mb-2">{speaker.name}</h3>
 												<p className="text-md md:text-xl font-medium mb-1 text-orange-300">{speaker.position}</p>
 												<p className="flex items-center text-gray-200 text-md md:text-lg mb-4">
@@ -70,16 +70,25 @@ export default function Speakers() {
 
 									{/* Panel Info Section */}
 									<div
-										className={`p-8 flex flex-col justify-center bg-white ${index % 2 === 1 ? "lg:col-start-1" : ""}`}
+										className={`p-8 flex gap-8 flex-col justify-center bg-white ${index % 2 === 1 ? "lg:col-start-1" : ""}`}
 									>
 
-										<h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 leading-tight">
+										<h2 className="text-2xl md:text-4xl font-bold text-primary leading-snug">
 											{speaker.panel}
+											
 										</h2>
 
-										<p className="text-primary mb-6 text-lg leading-relaxed">{speaker.panelDesc}</p>
-
 										
+										{/* <div className="grid grid-cols-1 gap-4">
+											<div className="flex flex-row gap-2 items-center text-center p-2 py-0">
+												<Clock className="h-6 w-6 text-secondary" />
+												<p className="text-lg text-gray-600">30 July, 9.30 AM - 10.30 AM</p>
+											</div>
+											
+
+										</div> */}
+
+
 										<div className="flex flex-col sm:flex-row gap-3">
 											<Button
 												className="bg-orange-500 hover:bg-orange-600 text-white"
@@ -89,6 +98,8 @@ export default function Speakers() {
 												Speaker Profile
 												<ExternalLink className="h-4 w-4 ml-2" />
 											</Button>
+
+
 										</div>
 									</div>
 								</div>

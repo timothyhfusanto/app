@@ -88,7 +88,7 @@ export function Navbar() {
 				<div className="hidden lg:flex items-center">
 					<Button
 						className="px-10 cursor-pointer relative overflow-hidden group"
-						onClick={() => window.open("https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-gu5ccVBafY5GvEBKHtyMV6FUQzJYNkRVMFY3V1dLMDNCVUtPMUZTMFpERy4u", "_blank")}
+						onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
 					>
 						REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 					</Button>
@@ -122,7 +122,7 @@ export function Navbar() {
 								))}
 								<Button
 									className="w-full mt-4 relative overflow-hidden group"
-									onClick={() => window.open("https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-gu5ccVBafY5GvEBKHtyMV6FUQzJYNkRVMFY3V1dLMDNCVUtPMUZTMFpERy4u", "_blank")}
+									onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
 								>
 									REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
 								</Button>

@@ -89,19 +89,6 @@ export default function Programme() {
 						))}
 					</div>
 				</div>
-
-				<motion.div
-					className="mt-20 flex justify-center items-center"
-					initial={{ opacity: 0, y: -50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.4, duration: 0.8 }}
-					viewport={{ once: true }}
-				>
-					<Button className="bg-secondary text-lg uppercase !px-10 py-8">
-						<Download className="w-5 h-5 mr-2" /> View Programme PDF
-					</Button>
-				</motion.div>
-
 			</div>
 		</section>
 	);

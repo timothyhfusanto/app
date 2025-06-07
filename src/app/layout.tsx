@@ -21,7 +21,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "CSSH Symposium",
-  description: "Join us for an exciting symposium on the impact of information systems research, hosted by the National University of Singapore.",
+  description: "Join us for an exciting symposium on the impact of information systems research, hosted by the CSSH, National University of Singapore.",
   icons: {
     icon: "/favicon.ico",
   },
