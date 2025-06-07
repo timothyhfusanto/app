@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cssh-symposium.com"),
   openGraph: {
     title: "CSSH Symposium",
-    description: "Join us for an exciting symposium on the impact of information systems research, hosted by the National University of Singapore.",
+    description: "Join us for an exciting symposium on the impact of information systems research, hosted by the Centre for Computational Social Science and Humanities, National University of Singapore.",
     url: "https://cssh-symposium.com",
     images: [
       {
