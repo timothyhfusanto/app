@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import EventCard from "@/components/own/event-card";
 import { day1, day2 } from "@/lib/data/schedule-information";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 
 export default function Programme() {
 	const [selectedDay, setSelectedDay] = useState<"day1" | "day2">("day1");
