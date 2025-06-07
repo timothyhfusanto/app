@@ -38,6 +38,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://cssh-symposium.com/og-banner.png",
+        width: 1200,
+        height: 630,
+        type: "image/png",
+        secureUrl: "https://cssh-symposium.com/og-banner.png",
         alt: "CSSH Symposium",
       },
     ],
