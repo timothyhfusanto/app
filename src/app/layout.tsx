@@ -35,6 +35,12 @@ export const metadata: Metadata = {
     title: "CSSH Symposium",
     description: "Join us for an exciting symposium on the impact of information systems research, hosted by the National University of Singapore.",
     url: "https://cssh-symposium.com",
+    images: [
+      {
+        url: "https://cssh-symposium.com/og-banner.png",
+        alt: "CSSH Symposium",
+      },
+    ],
     siteName: "CSSH Symposium",
     locale: "en_SG",
     type: "website",
