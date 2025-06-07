@@ -27,14 +27,14 @@ export const metadata: Metadata = {
   },
   keywords: ["CSSH Symposium", "NUS", "Information Systems", "Academic Conference", "Digital Transformation"],
   authors: [
-    { name: "Centre for Computational Social Science and Humanities", url: "https://csshworkshop.vercel.app" },
+    { name: "Centre for Computational Social Science and Humanities", url: "https://cssh-symposium.com" },
   ],
   creator: "Centre for Computational Social Science and Humanities",
-  metadataBase: new URL("https://csshworkshop.vercel.app"),
+  metadataBase: new URL("https://cssh-symposium.com"),
   openGraph: {
     title: "CSSH Symposium",
     description: "Join us for an exciting symposium on the impact of information systems research, hosted by the National University of Singapore.",
-    url: "https://csshworkshop.vercel.app",
+    url: "https://cssh-symposium.com",
     siteName: "CSSH Symposium",
     locale: "en_SG",
     type: "website",
