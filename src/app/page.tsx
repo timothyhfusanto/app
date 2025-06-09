@@ -21,9 +21,8 @@ export default function Home() {
     seconds: 0,
   })
 
-  // Countdown timer
   useEffect(() => {
-    const targetDate = new Date("2025-07-29T09:00:00").getTime()
+    const targetDate = new Date("2025-07-29T08:30:00+08:00").getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -94,7 +93,7 @@ export default function Home() {
             <Card className="rounded-lg shadow-lg flex-row bg-white/10 backdrop-blur-sm border-none text-primary p-4 flex items-center gap-x-4">
               <AlarmClock className="text-secondary" />
               <div className="text-left">
-                <p className="font-semibold">19 July 2025</p>
+                <p className="font-semibold">20 July 2025</p>
                 <p className="text-sm opacity-90">Registration deadline</p>
               </div>
             </Card>
