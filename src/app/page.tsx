@@ -92,7 +92,7 @@ export default function Home() {
             <Card className="rounded-lg shadow-lg flex-row bg-white/10 backdrop-blur-sm border-none text-primary p-4 flex items-center gap-x-4">
               <MapPin className="text-secondary" />
               <div className="text-left">
-                <p className="font-semibold">Lecture Theatre (LT 52)</p>
+                <p className="font-semibold">Lecture Theatre 52 (LT 52)</p>
                 <p className="text-sm opacity-90">Level 2, Stephen Riady Centre, Utown, NUS</p>
               </div>
             </Card>

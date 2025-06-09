@@ -38,7 +38,7 @@ export default function Venue() {
 							<MapPin className="h-8 w-8 text-secondary mx-auto mb-4" />
 							<h3 className="font-semibold mb-2">Location</h3>
 							<p className="text-sm">
-								Lecture Theatre (LT 52), Level 2, Stephen Riady Centre, University Town, NUS, 2 College Ave W, Singapore 138607
+								Lecture Theatre 52 (LT 52), Level 2, Stephen Riady Centre, University Town, NUS, 2 College Ave W, Singapore 138607
 							</p>
 						</CardContent>
 					</Card>
