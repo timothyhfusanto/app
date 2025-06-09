@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import EventCard from "@/components/own/event-card";
 import { day1, day2 } from "@/lib/data/schedule-information";
@@ -10,6 +10,13 @@ export default function Programme() {
 	const [selectedDay, setSelectedDay] = useState<"day1" | "day2">("day1");
 
 	const schedule = selectedDay === "day1" ? day1 : day2;
+
+	useEffect(() => {
+		const section = document.getElementById("programme");
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth" });
+		}
+	}, [selectedDay]);
 
 	return (
 		<section id="programme" className="min-h-screen w-full items-center justify-center">
@@ -89,6 +96,37 @@ export default function Programme() {
 					</div>
 				</div>
 			</div>
+
+			<motion.div
+				initial={{ opacity: 0, y: -50 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ delay: 0.4, duration: 0.8 }}
+				viewport={{ once: true }}
+				className="py-20"
+			>
+				<div className="container mx-auto px-4 py-6">
+					<div className="flex justify-center gap-4">
+						<Button
+							onClick={() => setSelectedDay("day1")}
+							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day1"
+								? "bg-orange-500 text-white shadow-lg"
+								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
+								}`}
+						>
+							Day 1 - 29 July
+						</Button>
+						<Button
+							onClick={() => setSelectedDay("day2")}
+							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day2"
+								? "bg-orange-500 text-white shadow-lg"
+								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
+								}`}
+						>
+							Day 2 - 30 July
+						</Button>
+					</div>
+				</div>
+			</motion.div>
 		</section>
 	);
 }

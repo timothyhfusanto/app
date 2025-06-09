@@ -12,16 +12,17 @@ export default function Footer() {
 
         <div className="flex flex-col gap-2">
           <h4 className="font-semibold mb-2">Navigation</h4>
-          <Link href="#home" className="hover:text-primary transition">Home</Link>
-          <Link href="#about" className="hover:text-primary transition">About</Link>
-          <Link href="#speakers" className="hover:text-primary transition">Speakers</Link>
-          <Link href="#registration" className="hover:text-primary transition">Registration</Link>
-          <Link href="#venue" className="hover:text-primary transition">Venue</Link>
+          <Link href="#home" className="hover:text-secondary transition">Home</Link>
+          <Link href="#about" className="hover:text-secondary transition">About</Link>
+          <Link href="#speakers" className="hover:text-secondary transition">Speakers</Link>
+          <Link href="#programme" className="hover:text-secondary transition">Programme</Link>
+          <Link href="#registration" className="hover:text-secondary transition">Registration</Link>
+          <Link href="#venue" className="hover:text-secondary transition">Venue</Link>
         </div>
 
         <div className="flex flex-col gap-2">
           <h4 className="font-semibold mb-2">Contact</h4>
-          <a href="mailto:carol_tan@nus.edu.sg" className="flex items-center gap-2 hover:text-primary transition">
+          <a href="mailto:carol_tan@nus.edu.sg" className="flex items-center gap-2 hover:text-secondary transition">
             <Mail size={16} /> carol_tan@nus.edu.sg
           </a>
         </div>

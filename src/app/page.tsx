@@ -57,15 +57,6 @@ export default function Home() {
 
         {/* Overlay Content */}
         <div className="z-10 text-center container mx-auto py-25 px-10 text-primary flex flex-col gap-10 items-center justify-center h-full uppercase">
-          <motion.p
-            className="tracking-widest text-md lg:text-xl font-semibold"
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Singapore , National University of Singapore
-          </motion.p>
           <motion.h1
             className="text-6xl lg:text-7xl  font-bold leading-tight uppercase tracking-tight"
             initial={{ opacity: 0, y: -50 }}
@@ -101,8 +92,8 @@ export default function Home() {
             <Card className="rounded-lg shadow-lg flex-row bg-white/10 backdrop-blur-sm border-none text-primary p-4 flex items-center gap-x-4">
               <MapPin className="text-secondary" />
               <div className="text-left">
-                <p className="font-semibold">LT 52, Level 2</p>
-                <p className="text-sm opacity-90">Stephen Riady Centre, Utown, NUS</p>
+                <p className="font-semibold">Lecture Theatre (LT 52)</p>
+                <p className="text-sm opacity-90">Level 2, Stephen Riady Centre, Utown, NUS</p>
               </div>
             </Card>
           </motion.div>

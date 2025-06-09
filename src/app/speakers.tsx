@@ -15,13 +15,13 @@ export default function Speakers() {
 			<div className="flex flex-col h-full container mx-auto px-10 py-20">
 				<div className="flex flex-col items-center gap-4 justify-center text-center">
 					<motion.h1
-						className="text-6xl lg:text-7xl font-semibold text-primary uppercase leading-tight tracking-tight"
+						className="text-5xl lg:text-7xl font-semibold text-primary uppercase leading-tight tracking-tight"
 						initial={{ opacity: 0, y: -50 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2, duration: 0.6 }}
 						viewport={{ once: true }}
 					>
-						Meet the incredible <br /> <span className="text-secondary">speakers</span>
+						HEAR FROM the <br /> <span className="text-secondary">OUTSTANDING speakers</span>
 					</motion.h1>
 				</div>
 
