@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import EventCard from "@/components/own/event-card";
 import { day1, day2 } from "@/lib/data/schedule-information";
