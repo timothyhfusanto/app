@@ -11,12 +11,13 @@ export default function Programme() {
 
 	const schedule = selectedDay === "day1" ? day1 : day2;
 
-	useEffect(() => {
+	const handleDayChange = () => {
 		const section = document.getElementById("programme");
 		if (section) {
 			section.scrollIntoView({ behavior: "smooth" });
 		}
-	}, [selectedDay]);
+		setSelectedDay(selectedDay === "day1" ? "day2" : "day1");
+	}
 
 	return (
 		<section id="programme" className="min-h-screen w-full items-center justify-center">
@@ -46,7 +47,7 @@ export default function Programme() {
 				<div className="container mx-auto px-4 py-6">
 					<div className="flex justify-center gap-4">
 						<Button
-							onClick={() => setSelectedDay("day1")}
+							onClick={handleDayChange}
 							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day1"
 								? "bg-orange-500 text-white shadow-lg"
 								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -55,7 +56,7 @@ export default function Programme() {
 							Day 1 - 29 July
 						</Button>
 						<Button
-							onClick={() => setSelectedDay("day2")}
+							onClick={handleDayChange}
 							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day2"
 								? "bg-orange-500 text-white shadow-lg"
 								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -107,7 +108,7 @@ export default function Programme() {
 				<div className="container mx-auto px-4 py-6">
 					<div className="flex justify-center gap-4">
 						<Button
-							onClick={() => setSelectedDay("day1")}
+							onClick={handleDayChange}
 							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day1"
 								? "bg-orange-500 text-white shadow-lg"
 								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -116,7 +117,7 @@ export default function Programme() {
 							Day 1 - 29 July
 						</Button>
 						<Button
-							onClick={() => setSelectedDay("day2")}
+							onClick={handleDayChange}
 							className={`px-6 py-6 rounded-full font-medium text-lg transition-all ${selectedDay === "day2"
 								? "bg-orange-500 text-white shadow-lg"
 								: "bg-gray-200 text-gray-700 hover:bg-gray-300"
