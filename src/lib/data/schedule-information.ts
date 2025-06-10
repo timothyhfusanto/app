@@ -91,7 +91,7 @@ export const day1 = [
 	{
 		time: "2:00 PM - 3:00 PM",
 		content: [{
-			title: "Keynote: Artificial Intelligence and Augmented Immersion - Simulations and Serious Play in Public Policy",
+			title: "Keynote: Artificial Intelligence and Augmented Immersion - Implications of Computational Social Science in Public Policy",
 		},
 		{
 			title: "Speaker: ",

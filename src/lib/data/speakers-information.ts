@@ -32,7 +32,7 @@ export const speakers = [
     image: aaron,
     link: "https://www.bsg.ox.ac.uk/people/aaron-maniam-0",
     panelNum: "II",
-    panel: "Artificial Intelligence and Augmented Immersion - Simulations and Serious Play in Public Policy",
+    panel: "Artificial Intelligence and Augmented Immersion - Implications of Computational Social Science in Public Policy",
     layout: "right",
     time: "Day 1, 02:00 PM - 05:00 PM",
   },
