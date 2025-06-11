@@ -7,7 +7,7 @@ export const speakers = [
   {
     name: "Professor Alex ‘Sandy’ Pentland",
     position: "Professor of Media Arts and Sciences",
-    university: "Massachusetts Institute of Technology",
+    university: "Massachusetts Institute of Technology and Stanford University",
     image: alex,
     link: "https://www.media.mit.edu/people/sandy/overview/",
     panelNum: "III",

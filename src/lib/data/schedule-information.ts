@@ -162,7 +162,7 @@ export const day2 = [
 			title: "Speaker: ",
 			professor: "Professor Alex ‘Sandy’ Pentland",
 			link: "https://www.media.mit.edu/people/sandy/overview/",
-			description: "Professor of Media Arts and Sciences, Massachusetts Institute of Technology",
+			description: "Professor of Media Arts and Sciences, Massachusetts Institute of Technology and Stanford University",
 		}],
 		type: "keynote"
 	},
