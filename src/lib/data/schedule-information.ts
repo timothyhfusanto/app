@@ -50,11 +50,6 @@ export const day1 = [
 			title: "Participants: ",
 			participants: [
 				{
-					professor: "Elena Karahanna",
-					link: "https://www.terry.uga.edu/directory/elena-karahanna/",
-					description: "Department of Management Information Systems, University of Georgia",
-				},
-				{
 					professor: "Jungup Lee",
 					link: "https://discovery.nus.edu.sg/11058-jungup-lee",
 					description: "Co-Director Social Service Research Centre, National University of Singapore",
