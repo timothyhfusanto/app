@@ -11,9 +11,15 @@ export const day1 = [
 		time: "9:00 AM - 9:30 AM",
 		content: [{
 			title: "Opening Remarks",
-			professor: "Professor Lionel Wee",
-			link: "https://discovery.nus.edu.sg/304-hock-ann-lionel-wee",
-			description: "Dean Faculty of Arts and Social Sciences, National University of Singapore",
+			participants: [{
+				professor: "Professor Lionel Wee",
+				link: "https://discovery.nus.edu.sg/304-hock-ann-lionel-wee",
+				description: "Dean Faculty of Arts and Social Sciences, National University of Singapore",
+			}, {
+				professor: "Professor Tulika Mitra",
+				link: "https://www.comp.nus.edu.sg/~tulika/",
+				description: "Dean School of Computing, National University of Singapore",
+			}]			
 		}, {
 			title: "Welcome Address",
 			professor: "Professor Atreyi Kankanhalli",
