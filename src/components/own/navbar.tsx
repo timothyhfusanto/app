@@ -86,13 +86,16 @@ export function Navbar() {
 
 				{/* Right: Button */}
 				<div className="hidden lg:flex items-center">
-					<Button
-						disabled
-						className="px-10 cursor-pointer relative overflow-hidden group"
-						onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
-					>
-						REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
-					</Button>
+					<a className="hover:cursor-not-allowed" target="_blank" rel="noopener noreferrer">
+						<Button
+							disabled
+							className="px-10 cursor-pointer relative overflow-hidden group"
+							onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
+						>
+							REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
+						</Button>
+					</a>
+
 				</div>
 
 				<div className="lg:hidden">
@@ -121,13 +124,16 @@ export function Navbar() {
 										{section}
 									</button>
 								))}
-								<Button
-									disabled
-									className="w-full mt-4 relative overflow-hidden group"
-									onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
-								>
-									REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
-								</Button>
+								<a className="hover:cursor-not-allowed" target="_blank" rel="noopener noreferrer">
+									<Button
+										disabled
+										className="w-full mt-4 relative overflow-hidden group"
+										onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
+									>
+										REGISTER <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
+									</Button>
+								</a>
+
 							</div>
 						</SheetContent>
 					</Sheet>
