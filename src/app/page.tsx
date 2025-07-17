@@ -113,13 +113,19 @@ export default function Home() {
               ))}
             </div>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
             viewport={{ once: true }}
           >
+            <p className="text-lg text-primary leading-loose mb-4 font-bold">
+              <span className="text-secondary font-bold">Notice:</span> Thank you for your interest! The event is now fully registered.
+              <br />We hope to see you at our next event.
+            </p>
             <Button
+            disabled
               className="px-20 py-8 font-bold text-xl cursor-pointer relative overflow-hidden group bg-secondary hover:bg-amber-500"
               onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
             >

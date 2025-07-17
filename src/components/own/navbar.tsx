@@ -87,6 +87,7 @@ export function Navbar() {
 				{/* Right: Button */}
 				<div className="hidden lg:flex items-center">
 					<Button
+						disabled
 						className="px-10 cursor-pointer relative overflow-hidden group"
 						onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
 					>
@@ -121,6 +122,7 @@ export function Navbar() {
 									</button>
 								))}
 								<Button
+									disabled
 									className="w-full mt-4 relative overflow-hidden group"
 									onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
 								>
