@@ -20,16 +20,18 @@ export default function Registration() {
 				<h1 className="text-5xl lg:text-7xl font-bold text-primary uppercase">
 					Join Us!
 				</h1>
-				<p className="text-md text-primary leading-loose">
-					To register for the symposium, click on the button below. <br />
-					We look forward to seeing you there!
+				<p className="text-lg text-primary leading-loose">
+					<span className="text-secondary font-bold">Notice:</span> Thank you for your interest! The event is now fully registered. 
+					<br/>We hope to see you at our next event.
 				</p>
 				<a
 					target="_blank"
+					className="hover:cursor-not-allowed"
 					rel="noopener noreferrer"
 				>
 					<Button
-						className="px-10 py-6 text-lg cursor-pointer relative overflow-hidden group"
+						disabled
+						className="px-10 py-6 text-lg relative overflow-hidden group hover:opacity-50 "
 						onClick={() => window.open("https://forms.office.com/r/B3qmKrkDC5", "_blank")}
 					>
 						REGISTER NOW <span><ArrowRight className="transition-transform group-hover:translate-x-2" /></span>
